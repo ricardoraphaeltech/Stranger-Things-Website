@@ -328,6 +328,14 @@ footer {
             padding-left: 10vw;
         }
     }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 0 3vw 2vw;
+    }
 }
 
 @keyframes textoInfinito {
@@ -586,6 +594,10 @@ footer {
                 font-size: 20vw;
                 padding-left: 15vw;
             }
+        }
+
+        .copyright {
+            padding: 0 3vw 3vw;
         }
     }
 }
