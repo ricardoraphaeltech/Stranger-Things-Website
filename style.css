@@ -14,6 +14,14 @@ html, body {
     overflow-x: hidden;
 }
 
+body .aviso-projeto {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-top: 1vw;
+    z-index: 10;
+}
+
 button {
     font-family: "Poppins", sans-serif;
     display: flex;
@@ -41,11 +49,6 @@ header {
     padding: 4% 3vw;
     position: absolute;
     z-index: 9;
-
-    strong {
-        text-align: center;
-        font-size: 16px;
-    }
 }
 
 @font-face {
@@ -429,12 +432,14 @@ footer {
 }
 
 @media (max-width: 600px) {
-    header {
-        padding: 5% 4vw;
+    .aviso-projeto {
         strong {
-            width: 50%;
             font-size: 14px;
         }
+    }
+
+    header {
+        padding: 5% 4vw;
     }
 
     section {
@@ -613,11 +618,15 @@ footer {
 }
 
 @media (max-width: 450px) {
-    main {
+    header {
+        padding-top: 10%;
+    }
+
+    main .hero {
         .conteudo-hero {
             .div-esquerda {
                 position: relative;
-                top: 4%;
+                top: 5%;
             }
         }
     }
