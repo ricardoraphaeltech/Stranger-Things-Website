@@ -37,9 +37,15 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 4% 3vw;
     position: absolute;
     z-index: 9;
+
+    span {
+        text-align: center;
+        font-size: 16px;
+    }
 }
 
 @font-face {
@@ -332,6 +338,7 @@ footer {
     .copyright {
         display: flex;
         flex-direction: column;
+        font-size: 14px;
         text-align: center;
         width: 100%;
         padding: 0 3vw 2vw;
@@ -424,6 +431,10 @@ footer {
 @media (max-width: 600px) {
     header {
         padding: 5% 4vw;
+        span {
+            width: 50%;
+            font-size: 14px;
+        }
     }
 
     section {
@@ -434,7 +445,6 @@ footer {
         padding: 20% 4vw 6vw;
 
         .conteudo-hero {
-            position: none;
             top: 0;
             display: flex;
             flex-direction: column;
@@ -598,6 +608,17 @@ footer {
 
         .copyright {
             padding: 0 3vw 3vw;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        .conteudo-hero {
+            .div-esquerda {
+                position: relative;
+                top: 4%;
+            }
         }
     }
 }
