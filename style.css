@@ -42,7 +42,7 @@ header {
     position: absolute;
     z-index: 9;
 
-    span {
+    strong {
         text-align: center;
         font-size: 16px;
     }
@@ -431,7 +431,7 @@ footer {
 @media (max-width: 600px) {
     header {
         padding: 5% 4vw;
-        span {
+        strong {
             width: 50%;
             font-size: 14px;
         }
